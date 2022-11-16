@@ -405,7 +405,7 @@ ul {
   font-family: "Red Hat Text", Verdana, Geneva, Tahoma, sans-serif;
 }
 
-::placeholder, .preview__text, h4, h1 {
+.step__description, ::placeholder, .preview__text, h4, h1 {
   font-family: "Aleo", Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -435,6 +435,8 @@ h2 {
   font-weight: 500;
   line-height: 5.3rem;
   color: #F2785C;
+  margin: 0px 0px 40px 0px;
+  text-align: center;
 }
 
 h4 {
@@ -479,14 +481,30 @@ h4 {
   height: 31px;
 }
 
+.step__icon {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-square {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F2785C;
+  border-radius: 16px;
+}
+
 .wrapper {
   max-width: 1200px;
   margin: auto;
 }
 
 .header-cover {
-  max-width: 1400px;
   background-image: url(/assets/img/header-preview-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .header {
@@ -544,6 +562,24 @@ h4 {
   font-weight: 400;
   line-height: 2.9rem;
   color: #F2785C;
+}
+
+.steps__wrapper {
+  padding: 80px 11px 97px;
+}
+
+.layout-3-column {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step__description {
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: #0D606F;
+  margin: 30px 0px 0px 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

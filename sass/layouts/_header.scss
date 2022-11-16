@@ -1,6 +1,8 @@
 .header-cover {
-    max-width: 1400px;;
+    //max-width: 1400px;
     background-image: url(/assets/img/header-preview-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .header {

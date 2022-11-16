@@ -1,0 +1,14 @@
+.step__icon {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-square {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $color-primary;
+    border-radius: 16px;
+}

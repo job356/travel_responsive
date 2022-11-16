@@ -17,7 +17,9 @@ h1 {
 h2 {
     @extend %font-prim;
     @include font($size: 4rem, $height: 5.3rem);
-    color: $color-primary;   
+    color: $color-primary;
+    margin: 0px 0px 40px 0px;
+    text-align: center   
 }
 
 h4 {

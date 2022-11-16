@@ -1,0 +1,15 @@
+.steps__wrapper {
+    padding: 80px 11px 97px;
+}
+
+.layout-3-column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.step__description {
+    @extend %font-add;
+    @include font($weight: 400, $size: 2rem, $height: 2.4rem);
+    color: $color-wave;
+    margin: 30px 0px 0px 0px;
+}

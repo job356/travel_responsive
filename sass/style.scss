@@ -9,6 +9,7 @@
 @import "base/base";
 @import "base/buttons";
 @import "base/logo";
+@import "base/icons";
 
 //layouts
 @import "layouts/wrapper";
@@ -16,4 +17,5 @@
 
 //components
 @import "components/navigation";
-@import "components/preview"
+@import "components/preview";
+@import "components/steps";
