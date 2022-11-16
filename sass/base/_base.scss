@@ -1,0 +1,26 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    @extend %font-prim;
+    @include font($size: 1.6rem, $height: 2.6rem);
+}
+
+h1 {
+    @extend %font-prim;
+    @include font($size: 8rem, $weight: 700, $height: 9.6rem);
+    color: $color-light;
+}
+
+h2 {
+    @extend %font-prim;
+    @include font($size: 4rem, $height: 5.3rem);
+    color: $color-primary;   
+}
+
+h4 {
+    @extend %font-add;
+    @include font($size: 3.5rem, $weight: 400, $height: 4.3rem);
+    color: $color-wave;
+}

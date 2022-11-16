@@ -1,0 +1,16 @@
+.header-cover {
+    max-width: 1400px;;
+    background-image: url(/assets/img/header-preview-bg.jpg);
+}
+
+.header {
+    padding: 25px 0px 24px;
+    background: $color-header;
+    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

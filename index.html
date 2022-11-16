@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Text:wght@500&display=swap">
     <link rel="stylesheet" href="sass/style.css">
     <title>Travel</title>
 </head>
 <body>
-    <header class="header">
-        <div class="wrapper">
-            <a href="#" class="logo">
-                <object data="/travel/assets/svg/logo.svg" type="image/svg+xml"></object>
-            </a>
-            <nav class="header-navigation">
-                <ul class="navigation">
-                    <li class="navigation__item">How It Works</li>
-                    <li class="navigation__item">Plan Your Trip</li>
-                    <li class="navigation__item">Destinations</li>
-                    <li class="navigation__item">Travel Stories</li>
-                </ul>
-            </nav>
-            <button class="header-button">Login</button>
-        </div>
-    </header>
-    <main>
+    <div class="header-cover">
+        <header class="header">
+            <div class="wrapper header__wrapper">
+                <a href="#" class="logo">
+                    <object data="/assets/svg/logo.svg" type="image/svg+xml"></object>
+                </a>
+                <nav class="header-navigation">
+                    <ul class="navigation">
+                        <li class="navigation__item">How It Works</li>
+                        <li class="navigation__item">Plan Your Trip</li>
+                        <li class="navigation__item">Destinations</li>
+                        <li class="navigation__item">Travel Stories</li>
+                    </ul>
+                </nav>
+                <button class="button button_header">Login</button>
+            </div>
+        </header>
         <section class="preview">
             <div class="wrapper">
                 <div class="preview__content">
@@ -32,11 +33,13 @@
                     <p class="preview__text">Receive personalized recommendations for countries, hotels, activities and more</p>
                     <form class="search-form" action="#">
                         <input class="search-form__input" type="text" name="#" placeholder="What would you like to do?">
-                        <button class="search-form__button">Start Planning</button>
+                        <button class="button search-form__button">Start Planning</button>
                     </form>
                 </div>
             </div>
         </section>
+    </div>
+    <main>
         <section class="steps">
             <div class="wrapper">
                 <h2 class="steps__title">3 STEPS TO THE PERFECT TRIP</h2>
@@ -44,7 +47,7 @@
                     <div class="step">
                         <div class="step__icon">
                             <span class="icon-square">
-                                <object class="ico ico_bike" data="./assets/svg/bike-icon.svg" type="image/svg+xml"></object>
+                                <object class="ico ico_bike" data="/assets/svg/bike-icon.svg" type="image/svg+xml"></object>
                             </span>
                         </div>
                         <p class="step_description">Tell us what you want to do</p>
@@ -52,7 +55,7 @@
                     <div class="step">
                         <div class="step__icon">
                             <span class="icon-square">
-                                <object class="ico ico_calendar" data="/travel/assets/svg/calendar-icon.svg" type="image/svg+xml"></object>
+                                <object class="ico ico_calendar" data="/assets/svg/calendar-icon.svg" type="image/svg+xml"></object>
                             </span>
                         </div>
                         <p class="step_description">Share us preferable dates</p>
@@ -60,7 +63,7 @@
                     <div class="step">
                         <div class="step__icon">
                             <span class="icon-square">
-                                <object class="ico ico_airplane" data="/travel/assets/svg/airplane-icon.svg" type="image/svg+xml"></object>
+                                <object class="ico ico_airplane" data="/assets/svg/airplane-icon.svg" type="image/svg+xml"></object>
                             </span>
                         </div>
                         <p class="step_description">We will give you recommendations</p>
@@ -76,11 +79,11 @@
                     <span class="destinations__name">spain</span>
                 </div>
                 <div class="destination block-rounded">
-                    <img class="destinations__image" src="/travel/assets/img/japan.jpg" alt="japan">
+                    <img class="destinations__image" src="/assets/img/japan.jpg" alt="japan">
                     <span class="destinations__name">japan</span>
                 </div>
                 <div class="destination block-rounded">
-                    <img class="destinations__image" src="/travel/assets/img/usa.jpg" alt="usa">
+                    <img class="destinations__image" src="/assets/img/usa.jpg" alt="usa">
                     <span class="destinations__name">usa</span>
                 </div>
             </div>
@@ -90,8 +93,8 @@
                     <span class="destinations__circle-control destination__circle-control_active"></span>
                     <span class="destinations__circle-control"></span>
                 </div>
-                <button class="destinations-button">
-                    <object class="destinations-button__arrow" data="/travel/assets/svg/arrow.svg" type="image/svg+xml"></object>
+                <button class="button destinations__button">
+                    <object class="destinations-button__arrow" data="/assets/svg/arrow.svg" type="image/svg+xml"></object>
                     Find More
                 </button>
             </div>
@@ -101,36 +104,36 @@
                 <h2 class="stories__title">TRAVEL STORIES</h2>
                 <div class="stories-content">
                     <div class="story">
-                        <img class="story__image block-shadowed" src="/travel/assets/img/thailand-story.jpg" alt="thailand">
+                        <img class="story__image block-shadowed" src="/assets/img/thailand-story.jpg" alt="thailand">
                         <div class="story__description">
                             <h4 class="story__title">10 Photos of Attractive Thailand</h4>
                             <p class="story__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <a href="#">Read More</a></p>
                         </div>
                     </div>
                     <div class="story">
-                        <img class="story__image block-shadowed" src="/travel/assets/img/national park-story.jpg" alt="Utah">
+                        <img class="story__image block-shadowed" src="/assets/img/national park-story.jpg" alt="Utah">
                         <div class="story__description">
                             <h4 class="story__title">Canyonlands National Park, Utah</h4>
                             <p class="story__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <a href="#">Read More</a></p>
                         </div>
                     </div>
                     <div class="story">
-                        <img class="story__image block-shadowed" src="/travel/assets/img/mountain-story.jpg" alt="mountain">
+                        <img class="story__image block-shadowed" src="/assets/img/mountain-story.jpg" alt="mountain">
                         <div class="story__description">
                             <h4 class="story__title">I left my heart in the Mountains!</h4>
                             <p class="story__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <a href="#">Read More</a></p>
                         </div>
                     </div>
                     <div class="story">
-                        <img class="story__image block-shadowed" src="/travel/assets/img/journey-story.jpg" alt="the road">
+                        <img class="story__image block-shadowed" src="/assets/img/journey-story.jpg" alt="the road">
                         <div class="story__description">
                             <h4 class="story__title">The Longest journey in my life!</h4>
                             <p class="story__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <a href="#">Read More</a></p>
                         </div>
                     </div>
                 </div>
-                <button class="stories__button">
-                    <object class="destinations-button__arrow" data="/travel/assets/svg/arrow.svg" type="image/svg+xml"></object>
+                <button class="button stories__button">
+                    <object class="destinations-button__arrow" data="/assets/svg/arrow.svg" type="image/svg+xml"></object>
                     See More
                 </button>
             </div>
@@ -141,13 +144,13 @@
             <p class="footer-copirights">All Rights Reserved © Travel Portal</p>
             <div class="footer-social-media layout-3-column">
                 <div class="footer-social-media__icon">
-                    <object class="instagram-ico" data="/travel/assets/svg/instagram-icon.svg" type="image/svg+xml"></object>
+                    <object class="instagram-ico" data="/assets/svg/instagram-icon.svg" type="image/svg+xml"></object>
                 </div>
                 <div class="footer-social-media__icon">
-                    <object class="you-tube-ico" data="/travel/assets/svg/you tube-icon.svg" type="image/svg+xml"></object>
+                    <object class="you-tube-ico" data="/assets/svg/you tube-icon.svg" type="image/svg+xml"></object>
                 </div>
                 <div class="footer-social-media__icon">
-                    <object class="twitter-ico" data="/travel/assets/svg/twitter-icon.svg" type="image/svg+xml"></object>
+                    <object class="twitter-ico" data="/assets/svg/twitter-icon.svg" type="image/svg+xml"></object>
                 </div>
             </div>
         </div>

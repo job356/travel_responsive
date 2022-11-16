@@ -1,0 +1,11 @@
+.navigation {
+    display: flex;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+}
+
+.navigation__item {
+    padding: 0px 21px;
+    cursor: pointer;
+    color: $color-light;
+}
