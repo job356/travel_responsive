@@ -1,0 +1,28 @@
+.wrapper-limiter {
+    width: 100%;
+    overflow: hidden;
+}
+
+.destination {
+    position: relative;
+}
+
+.destination__img {
+    border-radius: 16px;
+}
+
+.destinations__name {
+    position: absolute;
+    left: 15px;
+    bottom: 40px;
+    @include font($size: 3.2rem, $height: 4.2rem);
+    color: $color-light;
+}
+
+.destination-slider {
+    position: relative;
+    width: 2520px;
+    right: 540px;
+    display: flex;
+    justify-content: space-between;
+}    
