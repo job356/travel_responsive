@@ -435,7 +435,7 @@ h2 {
   font-weight: 500;
   line-height: 5.3rem;
   color: #F2785C;
-  margin: 0px 0px 40px 0px;
+  margin: 0%;
   text-align: center;
 }
 
@@ -470,6 +470,9 @@ h4 {
   position: absolute;
   top: 18px;
   right: 18px;
+}
+.button_destinations {
+  margin: 0 auto 0 auto;
 }
 
 .destinations-button__arrow {
@@ -568,9 +571,10 @@ h4 {
   padding: 80px 11px 97px;
 }
 
-.layout-3-column {
+.steps-content {
   display: flex;
   justify-content: space-between;
+  padding: 40px 0 0 0;
 }
 
 .step__description {
@@ -584,11 +588,13 @@ h4 {
 
 .wrapper-limiter {
   width: 100%;
+  padding: 46px 0 24px 0;
   overflow: hidden;
 }
 
 .destination {
   position: relative;
+  padding: 0 30px;
 }
 
 .destination__img {
@@ -597,7 +603,7 @@ h4 {
 
 .destinations__name {
   position: absolute;
-  left: 15px;
+  left: 45px;
   bottom: 40px;
   font-style: normal;
   font-size: 3.2rem;
@@ -607,11 +613,27 @@ h4 {
 }
 
 .destination-slider {
-  position: relative;
-  width: 2520px;
-  right: 540px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.destinations-control {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 40px 0;
+}
+
+.destinations-control__circle {
+  width: 20px;
+  height: 20px;
+  background: rgba(242, 120, 92, 0.5);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.destination-control__circle_active {
+  background: #F2785C;
 }
 
 /*# sourceMappingURL=style.css.map */
