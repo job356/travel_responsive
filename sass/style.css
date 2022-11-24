@@ -508,7 +508,7 @@ h4 {
 .header-cover {
   background-image: url(/assets/img/header-preview-bg.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .header {
@@ -521,6 +521,30 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.wrapper__footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 14px 0;
+}
+
+.footer-social-media {
+  display: flex;
+  align-self: flex-end;
+}
+
+.footer-social-media__icon {
+  display: flex;
+  padding: 0 10px;
+}
+
+.footer-copirights {
+  line-height: 2.1rem;
+  color: #FFFFFF;
+  margin: 0px;
+  padding-right: 26.5%;
 }
 
 .navigation {
@@ -651,7 +675,7 @@ h4 {
 .stories-cover {
   background-image: url(/assets/img/footer-bg.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .stories-content {
