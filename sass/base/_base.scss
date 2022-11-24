@@ -26,4 +26,5 @@ h4 {
     @extend %font-add;
     @include font($size: 3.5rem, $weight: 400, $height: 4.3rem);
     color: $color-wave;
+    margin: 0 0 24px 40px;
 }
