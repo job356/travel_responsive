@@ -11,6 +11,9 @@
     border: none;
     color: $color-light;
     background: $color-wave;
+    @include media-mobile {
+        @include font ($size: 1.1rem, $height: 1.5rem);
+    }
     &_header {
         padding: 10px 30px;
         font-size: 1.6rem;
@@ -24,6 +27,11 @@
         position: absolute;
         top: 18px;
         right: 18px;
+        @include media-mobile {
+            padding: 7.5px 9px;
+            top: 13px;
+            right: 9px;
+        }
     }
     &_destinations, &_stories {
         margin: 0 auto 0 auto;

@@ -12,6 +12,9 @@ h1 {
     @include font($size: 8rem, $weight: 700, $height: 9.6rem);
     color: $color-light;
     margin: 0%;
+    @include media-mobile {
+        display: none;
+    }
 }
 
 h2 {
