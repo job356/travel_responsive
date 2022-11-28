@@ -1,4 +1,11 @@
 .logo {
     width: 216px;
     height: 31px;
+    cursor: pointer;
+}
+
+.logo-text {
+    @include media-mobile {
+        display: none;
+    }
 }

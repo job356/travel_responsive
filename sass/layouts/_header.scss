@@ -2,6 +2,9 @@
     background-image: url(/assets/img/header-preview-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    @include media-mobile {
+        background-image: url(/assets/img/mobile-header-bg.jpg);
+    }
 }
 
 .header {

@@ -467,6 +467,11 @@ h4 {
   line-height: 2.1rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
 }
+@media (max-width: 390px) {
+  .button_header {
+    display: none;
+  }
+}
 .button_search-form {
   position: absolute;
   top: 18px;
@@ -483,6 +488,13 @@ h4 {
 .logo {
   width: 216px;
   height: 31px;
+  cursor: pointer;
+}
+
+@media (max-width: 390px) {
+  .logo-text {
+    display: none;
+  }
 }
 
 .step__icon {
@@ -500,15 +512,35 @@ h4 {
   border-radius: 16px;
 }
 
+.hamburger {
+  display: none;
+}
+@media (max-width: 390px) {
+  .hamburger {
+    display: inline-block;
+    cursor: pointer;
+  }
+}
+
 .wrapper {
   max-width: 1200px;
   margin: auto;
+}
+@media (max-width: 390px) {
+  .wrapper {
+    padding: 0 15px;
+  }
 }
 
 .header-cover {
   background-image: url(/assets/img/header-preview-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 390px) {
+  .header-cover {
+    background-image: url(/assets/img/mobile-header-bg.jpg);
+  }
 }
 
 .header {
@@ -551,6 +583,11 @@ h4 {
   display: flex;
   font-size: 1.6rem;
   line-height: 2.1rem;
+}
+@media (max-width: 390px) {
+  .navigation {
+    display: none;
+  }
 }
 
 .navigation__item {
