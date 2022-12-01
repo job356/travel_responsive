@@ -3,6 +3,7 @@
     justify-content: center;
 }
 
+
 .icon-square {
     width: 100px;
     height: 100px;
@@ -11,4 +12,15 @@
     justify-content: center;
     background: $color-primary;
     border-radius: 16px;
+    @include media-mobile {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.ico {
+    @include media-mobile {
+        width: 35px;
+        height: 32px;
+    }
 }
