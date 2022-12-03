@@ -1,0 +1,37 @@
+.control-mobile {
+    position: relative;
+    width: 100%;
+    top: 249px;
+    z-index: 1;
+}
+
+.control-mobile__circle {
+    @include media-mobile {
+        position: absolute;
+        left: 191px;
+        bottom: 20px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: rgba(242, 120, 92, 0.5);
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        right: 14px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: $color-primary;
+        
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        left: 14px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: rgba(242, 120, 92, 0.5);
+    } 
+}

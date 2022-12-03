@@ -563,6 +563,43 @@ h4 {
   }
 }
 
+.control-mobile {
+  position: relative;
+  width: 100%;
+  top: 249px;
+  z-index: 1;
+}
+
+@media (max-width: 390px) {
+  .control-mobile__circle {
+    position: absolute;
+    left: 191px;
+    bottom: 20px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(242, 120, 92, 0.5);
+  }
+}
+.control-mobile__circle:before {
+  content: "";
+  position: absolute;
+  right: 14px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #F2785C;
+}
+.control-mobile__circle:after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(242, 120, 92, 0.5);
+}
+
 .wrapper {
   max-width: 1200px;
   margin: auto;
@@ -784,14 +821,50 @@ h4 {
   padding: 46px 0 24px 0;
   overflow: hidden;
 }
+@media (max-width: 390px) {
+  .wrapper-limiter {
+    max-width: 390px;
+    padding: 20px 15px 0;
+  }
+}
+
+.destination-slider {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 390px) {
+  .destination-slider {
+    justify-content: space-between;
+  }
+}
 
 .destination {
   position: relative;
   padding: 0 30px;
 }
+@media (max-width: 390px) {
+  .destination {
+    padding-right: 15px;
+    padding-left: 0px;
+  }
+}
 
 .destination__img {
   border-radius: 16px;
+}
+@media (max-width: 390px) {
+  .destination__img {
+    display: none;
+  }
+}
+.destination__img_mobile {
+  display: none;
+}
+@media (max-width: 390px) {
+  .destination__img_mobile {
+    display: block;
+    border-radius: 16px;
+  }
 }
 
 .destinations__name {
@@ -804,16 +877,26 @@ h4 {
   line-height: 4.2rem;
   color: #FFFFFF;
 }
-
-.destination-slider {
-  display: flex;
-  justify-content: center;
+@media (max-width: 390px) {
+  .destinations__name {
+    font-style: normal;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+    left: 15px;
+    top: 8px;
+  }
 }
 
 .destinations-control {
   display: flex;
   justify-content: center;
   padding: 0 0 40px 0;
+}
+@media (max-width: 390px) {
+  .destinations-control {
+    display: none;
+  }
 }
 
 .destinations-control__circle {
