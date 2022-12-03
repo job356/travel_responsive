@@ -600,6 +600,37 @@ h4 {
   background: rgba(242, 120, 92, 0.5);
 }
 
+@media (max-width: 390px) {
+  .control-mobile_arrow-prew {
+    position: absolute;
+    left: 30px;
+    bottom: 93px;
+    background-image: url(/assets/svg/arrow-mobile.svg);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+  }
+  .control-mobile_arrow-prew:active {
+    background-image: url(/assets/svg/arrow-mobile_active.svg);
+  }
+}
+
+@media (max-width: 390px) {
+  .control-mobile_arrow-next {
+    position: absolute;
+    right: 30px;
+    bottom: 93px;
+    background-image: url(/assets/svg/arrow-mobile.svg);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+  }
+  .control-mobile_arrow-next:active {
+    background-image: url(/assets/svg/arrow-mobile_active.svg);
+  }
+}
+
 .wrapper {
   max-width: 1200px;
   margin: auto;

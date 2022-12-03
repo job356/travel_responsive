@@ -35,3 +35,34 @@
         background: rgba(242, 120, 92, 0.5);
     } 
 }
+
+.control-mobile_arrow-prew {
+    @include media-mobile {
+        position: absolute;
+        left: 30px;
+        bottom: 93px;
+        background-image: url(/assets/svg/arrow-mobile.svg);
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+        &:active {
+            background-image: url(/assets/svg/arrow-mobile_active.svg);
+        }
+    }
+}
+
+.control-mobile_arrow-next {
+    @include media-mobile {
+        position: absolute;
+        right: 30px;
+        bottom: 93px;
+        background-image: url(/assets/svg/arrow-mobile.svg);
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+        transform: rotate(180deg);
+        &:active {
+            background-image: url(/assets/svg/arrow-mobile_active.svg);
+        }
+    }
+}
