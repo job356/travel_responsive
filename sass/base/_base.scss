@@ -30,7 +30,11 @@ h2 {
 
 h4 {
     @extend %font-add;
-    @include font($size: 3.5rem, $weight: 400, $height: 4.3rem);
+    @include font($size: 3.5rem, $weight: 400, $height: 4.2rem);
     color: $color-wave;
     margin: 0 0 24px 40px;
+    @include media-mobile {
+        @include font ($size: 1.1rem, $weight: 700, $height:1.3rem);
+        margin: 0 0 10px 10px;
+    }
 }

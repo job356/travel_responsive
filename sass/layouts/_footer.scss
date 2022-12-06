@@ -3,6 +3,9 @@
     align-items: center;
     justify-content: flex-end;
     padding: 14px 0;
+    @include media-mobile {
+        justify-content: center;
+    }
 }
 
 .footer-social-media {
@@ -20,4 +23,7 @@
     color: $color-light;
     margin: 0px;
     padding-right: 26.5%;
+    @include media-mobile {
+        display: none;
+    }
 }
