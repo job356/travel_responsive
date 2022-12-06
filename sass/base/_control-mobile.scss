@@ -1,8 +1,12 @@
 .control-mobile {
-    position: relative;
-    width: 100%;
-    top: 249px;
-    z-index: 1;
+    display: none;
+    @include media-mobile {
+        display: block;
+        position: relative;
+        width: 100%;
+        top: 249px;
+        z-index: 1;
+    }
 }
 
 .control-mobile__circle {

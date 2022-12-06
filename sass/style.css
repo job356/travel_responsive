@@ -508,9 +508,24 @@ h4 {
 .button_destinations, .button_stories {
   margin: 0 auto 0 auto;
 }
+@media (max-width: 390px) {
+  .button_destinations, .button_stories {
+    padding: 7.5px 12px;
+    font-style: normal;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+  }
+}
 
 .destinations-button__arrow {
   padding: 0px 10px 0px 0px;
+}
+@media (max-width: 390px) {
+  .destinations-button__arrow {
+    padding: 0 6px 0 0;
+    width: 16px;
+  }
 }
 
 .logo {
@@ -564,10 +579,16 @@ h4 {
 }
 
 .control-mobile {
-  position: relative;
-  width: 100%;
-  top: 249px;
-  z-index: 1;
+  display: none;
+}
+@media (max-width: 390px) {
+  .control-mobile {
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 249px;
+    z-index: 1;
+  }
 }
 
 @media (max-width: 390px) {
@@ -855,7 +876,7 @@ h4 {
 @media (max-width: 390px) {
   .wrapper-limiter {
     max-width: 390px;
-    padding: 20px 15px 0;
+    padding: 20px 15px 10px;
   }
 }
 

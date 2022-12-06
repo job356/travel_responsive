@@ -4,7 +4,7 @@
     overflow: hidden;
     @include media-mobile {
         max-width: $mobile-width;
-        padding: 20px 15px 0;
+        padding: 20px 15px 10px;
     }
 }
 
