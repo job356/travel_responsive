@@ -1,9 +1,9 @@
 .header-cover {
-    background-image: url(assets\img\header-preview-bg.jpg);
+    background-image: url(assets/img/header-preview-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     @include media-mobile {
-        background-image: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%), url(../assets/img/mobile-header-bg.jpg);
+        background-image: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%), url(assets/img/mobile-header-bg.jpg);
     }
 }
 
